@@ -49,7 +49,7 @@
     <!-- Value in SharedPreferences for imperial temperature unit option [CHAR LIMIT=NONE] -->
     <string name="pref_units_imperial" translatable="false">imperial</string>
 
-    <string name="teste" translatable="false">teste3</string>
+    <string name="teste" translatable="false">teste4</string>
 
 
 </resources>

@@ -9,9 +9,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.test.AndroidTestCase;
 
-import com.umbrella.udacity.sunshine.Data.WeatherContract;
-import com.umbrella.udacity.sunshine.Data.WeatherDbHelper;
-
 import java.util.HashSet;
 
 public class TestDb extends AndroidTestCase {

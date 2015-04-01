@@ -14,8 +14,6 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.test.AndroidTestCase;
 
-import com.umbrella.udacity.sunshine.Data.WeatherContract;
-import com.umbrella.udacity.sunshine.Data.WeatherDbHelper;
 import com.umbrella.udacity.sunshine.utils.PollingCheck;
 
 import java.util.Map;

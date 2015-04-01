@@ -28,6 +28,7 @@ public class TestPractice extends AndroidTestCase {
         if (b > d) {
             fail("XX should never happen");
         }
+
     }
 
     @Override

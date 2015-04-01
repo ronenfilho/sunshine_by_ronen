@@ -1,4 +1,4 @@
-package com.umbrella.udacity.sunshine;
+package com.umbrella.udacity.sunshine.data;
 
 /**
  * Created by ronen on 31/03/15.

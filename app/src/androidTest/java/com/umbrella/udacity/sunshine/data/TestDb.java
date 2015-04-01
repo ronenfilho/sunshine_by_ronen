@@ -6,6 +6,8 @@ package com.umbrella.udacity.sunshine.data;
 
 import android.test.AndroidTestCase;
 
+import com.umbrella.udacity.sunshine.Data.WeatherDbHelper;
+
 public class TestDb extends AndroidTestCase {
 
     public static final String LOG_TAG = TestDb.class.getSimpleName();

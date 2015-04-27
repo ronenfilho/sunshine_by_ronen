@@ -31,7 +31,6 @@ package com.umbrella.udacity.sunshine;
  * limitations under the License.
  */
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -49,7 +48,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.umbrella.udacity.sunshine.data.WeatherContract;
-import com.umbrella.udacity.sunshine.service.SunshineService;
+import com.umbrella.udacity.sunshine.sync.SunshineSyncAdapter;
 
 /**
  * Encapsulates fetching the forecast and displaying it as a {@link ListView} layout.
@@ -181,10 +180,9 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     }
 
     private void updateWeather() {
-        Intent intent = new Intent(getActivity(), SunshineService.class);
-        intent.putExtra(SunshineService.LOCATION_QUERY_EXTRA,
-                Utility.getPreferredLocation(getActivity()));
-        getActivity().startService(intent);
+        //String location = Utility.getPreferredLocation(getActivity());
+        //new FetchWeatherTask(getActivity()).execute(location);
+        SunshineSyncAdapter.syncImmediately(getActivity());
     }
 
     @Override

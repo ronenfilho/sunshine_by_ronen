@@ -8,8 +8,6 @@ import android.view.MenuItem;
 
 public class DetailActivity extends ActionBarActivity {
 
-    public static final String DATE_KEY = "forecast_date";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +16,9 @@ public class DetailActivity extends ActionBarActivity {
         if (savedInstanceState == null) {
             // Create the detail fragment and add it to the activity
             // using a fragment transaction.
-            String date = getIntent().getStringExtra(DATE_KEY);
 
             Bundle arguments = new Bundle();
-            arguments.putString(DetailActivity.DATE_KEY, date);
+            arguments.putParcelable(DetailFragment.DETAIL_URI, getIntent().getData());
 
             DetailFragment fragment = new DetailFragment();
             fragment.setArguments(arguments);
@@ -35,7 +32,7 @@ public class DetailActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.detailfragment, menu);
+        getMenuInflater().inflate(R.menu.menu_detail, menu);
         return true;
     }
 
